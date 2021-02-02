@@ -1,0 +1,27 @@
+<h1>Update the Place</h1>
+
+<form method="POST">
+  <label for="input-name">Name of the place you want to update</label>
+  <input type="text" id="input-name" name="name" placeholder="Name" required value="{{place.title}}"/>
+
+  <label for="input-type">Coffee Shop or Book Store?</label>
+  <select name="type" id="input-type" required>
+    <option value="coffee_shop">Coffee Shop</option>
+    <option value="bookstore">Book Store</option>
+  </select>
+
+<button>Update Place</button>
+</form>
+
+  {{!-- <label for="input-category">Category</label>
+  <select name="category" id="input-category" required>
+    <option value="" selected disabled>Category</option> <!-- Display empty placeholder value-->
+    <option value="book">Book</option>
+    <option value="video">Video</option>
+    <option value="article">Article</option>
+    <option value="blog">Blog</option>
+    <option value="tweet">Tweet</option>
+    <option value="podcast">Podcast</option>
+    <option value="course">Course</option>
+  </select> --}}
+
